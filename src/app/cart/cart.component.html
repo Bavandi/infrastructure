@@ -61,10 +61,10 @@
                             <td colspan="6" class="action text-right">
                                 <div class="coupon">
                                     <input type="text" name="text" placeholder="Coupon code" required="">
-                                    <button class="add-btn cart" type="button">Apply Coupon</button>
+                                    <button class="add-btn cart" type="submit" (click)="$event.preventDefault()">Apply Coupon</button>
                                 </div>
                                 <div class="update-cart">
-                                    <button class="add-btn cart" type="button">Update cart</button>
+                                    <button class="add-btn cart" type="submit" (click)="$event.preventDefault()">Update cart</button>
                                 </div>
                             </td>
                         </tr>
@@ -87,7 +87,7 @@
                         </tbody>
                     </table>
                     <div class="wc-proceed-to-checkout">
-                        <button class="add-btn cart" type="button"> Proceed to checkout</button>
+                        <button class="add-btn cart" type="submit" (click)="$event.preventDefault()"> Proceed to checkout</button>
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
                         <label>Password <span>*</span></label>
                         <input id="tname" name="text" class="form-control-mod" type="text" required="">
                     </div>
-                    <button class="add-btn" type="button">Log In</button>
+                    <button class="add-btn" type="submit" (click)="$event.preventDefault()">Log In</button>
                     <label>
                         <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
                             type="checkbox" id="rememberme" value="forever">
@@ -55,7 +55,7 @@
                         access to your account, and for other purposes described in our <a [routerLink]="null">privacy
                             policy.</a>
                     </p>
-                    <button class="add-btn" type="button">Register</button>
+                    <button class="add-btn" type="submit" (click)="$event.preventDefault()">Register</button>
                 </div>
             </div>
         </div>
