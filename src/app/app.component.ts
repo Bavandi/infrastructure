@@ -48,6 +48,8 @@ export class AppComponent implements AfterViewInit, OnDestroy {
             // }, 500);
             this._preloader('on');
 
+            this._jsPluginsInitService.manuallyCloseCanvasMenu();
+
             break;
           }
 

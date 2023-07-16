@@ -171,7 +171,7 @@ export class JsPluginsInitService {
     }
   }
 
-  
+
 
   projectSlide1() {
     // Project
@@ -733,6 +733,10 @@ export class JsPluginsInitService {
     $("html,body").animate({
       scrollTop: 0
     }, 500)
+  }
+
+  manuallyCloseCanvasMenu() {
+    $('body').removeClass('nav-expanded');
   }
 
   canvasMenu() {
