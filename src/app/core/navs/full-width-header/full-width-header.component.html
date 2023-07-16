@@ -117,11 +117,14 @@
                                             </ul>
                                         </li>
 
-                                        <li class="menu-item-has-children">
-                                            <a [routerLink]="null">Pages</a>
+                                        <li class="menu-item-has-children" routerLinkActive="current-menu-item">
+                                            <a routerLink="/team-style1">Pages</a>
                                             <ul class="sub-menu">
                                                 <li routerLinkActive="current-menu-item">
                                                     <a routerLink="/team-style1">Team</a>
+                                                </li>
+                                                <li routerLinkActive="current-menu-item" hidden>
+                                                    <a routerLink="/team-single">Team single</a>
                                                 </li>
                                                 <li routerLinkActive="current-menu-item">
                                                     <a routerLink="/projects-filter-style1">Projects</a>
@@ -132,13 +135,14 @@
                                                 </li>
                                                 <li routerLinkActive="current-menu-item"><a
                                                         routerLink="/gallery">Gallery</a></li>
-                                                <li class="last-item menu-item-has-children">
+                                                <li class="last-item menu-item-has-children" >
+                                                   <ng-container *ngIf="false"> 
                                                     <a biDisableLink>Shop</a>
                                                     <ul class="sub-menu">
                                                         <li routerLinkActive="current-menu-item"><a
                                                                 routerLink="/shop">Shop</a></li>
-                                                        <li routerLinkActive="current-menu-item"><a
-                                                                routerLink="/shop-single">Shop Single</a>
+                                                        <li routerLinkActive="current-menu-item" hidden><a
+                                                                routerLink="/shop-single">Shop</a>
                                                         </li>
                                                         <li routerLinkActive="current-menu-item"><a
                                                                 routerLink="/cart">Cart</a></li>
@@ -147,6 +151,7 @@
                                                         <li routerLinkActive="current-menu-item"><a
                                                                 routerLink="/my-account">My Account</a></li>
                                                     </ul>
+                                                </ng-container>
                                                 </li>
                                             </ul>
                                         </li>
@@ -167,7 +172,7 @@
                         <div class="expand-btn-inner">
                             <ul>
                                 <li class="search-parent">
-                                    <a class="hidden-xs rs-search" href="#">
+                                    <a class="hidden-xs rs-search" [routerLink]="null">
                                         <i class="fi fi-rr-search"></i>
                                     </a>
                                     <div class="sticky_form">
@@ -185,7 +190,7 @@
                                 </li>
                                 <li class="btn-quote"><a class="quote-button" routerLink="/contact">Let's Talk</a></li>
                                 <li class="humburger">
-                                    <a id="nav-expander" class="nav-expander bar" href="#">
+                                    <a id="nav-expander" class="nav-expander bar" [routerLink]="null">
                                         <div class="bar">
                                             <span class="dot1"></span>
                                             <span class="dot2"></span>
@@ -253,7 +258,7 @@
                     <a routerLink="/shop">Shop</a>
                     <ul class="sub-menu">
                         <li routerLinkActive="current-menu-item"><a routerLink="/shop">Shop</a></li>
-                        <li routerLinkActive="current-menu-item"><a routerLink="/shop-single">Shop Single</a>
+                        <li routerLinkActive="current-menu-item"><a routerLink="/shop-single">Shop</a>
                         </li>
                         <li routerLinkActive="current-menu-item"><a routerLink="/cart">Cart</a></li>
                         <li routerLinkActive="current-menu-item"><a routerLink="/checkout">Checkout</a></li>
